@@ -161,6 +161,95 @@ header {
   cursor: pointer;
 }
 
+.modal {
+  background-color: #fff;
+  color: #222;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 3ms linear;
+  -webkit-transition: all 3ms linear;
+  -moz-transition: all 3ms linear;
+  -ms-transition: all 3ms linear;
+  -o-transition: all 3ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 350px;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    width: 350px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .modal {
+    width: 370px;
+    font-size: 1.9rem;
+  }
+}
+
+.show-modal {
+  display: block;
+}
+
+.new-game {
+  display: inline-block;
+  padding: 0.532rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 0.114rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .new-game {
+    padding: 0.631rem 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .new-game {
+    padding: 0.631rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .new-game {
+    padding: 0.631rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+
 footer {
   height: 2rem;
   background-color: #e1dede;
