@@ -14,8 +14,7 @@ $color-white: #fff;
 }
 
 img {
-	// width: 20px;
-	// height: 20px;
+	max-width: 100%;
 }
 
 body {
@@ -58,7 +57,7 @@ header {
 	min-height: calc(100vh - (5rem + 2rem));
 
 	&__sec {
-		padding: 2rem;
+		padding: 7rem;
 		text-align: center;
 
 		&__score-board {
@@ -184,12 +183,14 @@ header {
 	}
 
 	@media screen and (min-width: 1024px) {
-		width: 350px;
+		width: 400px;
 		font-size: 1.8rem;
 	}
 
 	@media screen and (min-width: 1366px) {
-		width: 370px;
+		width: 428px;
+		top: 40%;
+		left: 50%;
 		font-size: 1.9rem;
 	}
 }
