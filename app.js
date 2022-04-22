@@ -7,7 +7,8 @@ const maxScores = 10;
 const userScore = document.getElementById('user-score');
 const comScore = document.getElementById('com-score');
 const scoreBoard = document.getElementById('score-board'); //Todo
-const resultMsg = document.getElementById('result-msg');
+const resultMsg = document.getElementById( 'result-msg' );
+const gameInfo = document.getElementById('game-info');
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissor = document.getElementById('scissor');
@@ -41,7 +42,8 @@ const win = (user, computer) => {
 	const smallCompWords = 'comp'.fontsize(3).sub();
 	resultMsg.innerHTML = `${toLetter(user)}${smallUserWords} beats ${toLetter(
 		computer
-	)}${smallCompWords}. You win!`;
+	)}${smallCompWords}.`;
+	gameInfo.innerHTML = `You win!`
 	endGame(userScores);
 };
 
@@ -54,7 +56,8 @@ const lose = (user, computer) => {
 	const smallCompWords = 'comp'.fontsize(3).sup();
 	resultMsg.innerHTML = `${toLetter(user)}${smallUserWords} loses to ${toLetter(
 		computer
-	)}${smallCompWords}. You lost!`;
+	)}${smallCompWords}.`;
+	gameInfo.innerHTML = `You lost!`
 	endGame(compScores);
 };
 
@@ -63,7 +66,8 @@ const draw = (user, computer) => {
 	const smallCompWords = 'comp'.fontsize(3).sub();
 	resultMsg.innerHTML = `${toLetter(user)}${smallUserWords} equals ${toLetter(
 		computer
-	)}${smallCompWords}. It's a draw`;
+	)}${smallCompWords}.`;
+	gameInfo.innerHTML = `It's a draw!`
 };
 
 const game = (userChoice) => {
@@ -95,7 +99,6 @@ const endGame = (score) => {
 		userScore.innerHTML = '0';
 		comScore.innerHTML = '0';
 		resultMsg.innerHTML = 'Game Over!';
-		// actionMsg.innerHTML = 'Make your move, first to 10';
 	}
 };
 

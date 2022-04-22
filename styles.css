@@ -152,6 +152,10 @@ header {
   }
 }
 
+.container__msg p {
+  word-spacing: 0.5rem;
+}
+
 .container div img {
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
