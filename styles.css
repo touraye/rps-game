@@ -70,12 +70,17 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 180px;
-  height: 70px;
   font-size: 2.6rem;
-  margin: 0 auto;
   outline: 2px solid;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .container__sec__score-board {
+    width: 170px;
+    height: 70px;
+    margin: 0 auto;
+  }
 }
 
 .container__sec__score-board div {
@@ -121,10 +126,15 @@ header {
   margin: 2rem 0;
 }
 
+.container__image-container div {
+  width: 270px;
+  margin: 0 auto;
+}
+
 .container__image-container div img {
-  width: 60px;
-  height: 60px;
-  padding: 0.621rem;
+  width: auto;
+  height: auto;
+  padding: 0.1rem;
   border: 2px solid #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -137,6 +147,7 @@ header {
   .container__image-container div img {
     width: 70px;
     height: 70px;
+    padding: 0.5rem;
   }
 }
 
