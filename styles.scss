@@ -56,18 +56,21 @@ header {
 	min-height: calc(100vh - (5rem + 2rem));
 
 	&__sec {
-		padding: 7rem;
+		padding: 5rem 1rem;
 		text-align: center;
 
 		&__score-board {
 			display: flex;
 			align-items: center;
-			justify-content: center;		
+			justify-content: center;
 			font-size: 2.6rem;
-			outline: 2px solid;
+			border: 2px solid #fff;
+			border-radius: 5px;
 			position: relative;
-			
-			@media screen and (min-width: 768px) {
+			width: 138px;
+			margin: 0 auto;
+
+			@media screen and(min-width: 768px) {
 				width: 170px;
 				height: 70px;
 				margin: 0 auto;
@@ -79,7 +82,7 @@ header {
 
 			&__user {
 				position: absolute;
-				top: 20px;
+				top: 15px;
 				left: -40px;
 				background-color: #e2584d;
 				font-family: Asap, sans-serif;
@@ -89,7 +92,7 @@ header {
 
 			&__computer {
 				position: absolute;
-				top: 20px;
+				top: 15px;
 				right: -40px;
 				background-color: #e2584d;
 				font-family: Asap, sans-serif;
@@ -105,25 +108,23 @@ header {
 	}
 
 	&__image-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 3rem;
-		margin: 2rem 0;
+		display:flex;
+		align-items: center;			
+		gap: 1rem;		
+		max-width: 300px;				
+		margin: 2rem auto;	
+		padding: 1rem;	
 
 		& div {
-		width: 270px;
-			margin: 0 auto;				
+			width: 60px;
+			height: 60px;
+			margin: 0 auto;			
 		}
 
-		& div img {			
-			// width: 70px;
-			// height: 70px;
-			// padding: 0.1rem;
-			// object-fit: cover;
+		& div img {						
 			width: auto;
 			height: auto;		
-			padding: 0.1rem;	
+			padding: 0.4rem;	
 			border: 2px solid #fff;
 			border-radius: 50%;
 			-webkit-border-radius: 50%;
@@ -132,8 +133,8 @@ header {
 			-o-border-radius: 50%;
 			
 			@media screen and (min-width: 768px) {
-				width: 70px;
-				height: 70px;
+				width: 90px;
+				height: auto;
 				padding: 0.5rem;
 			}
 		}
